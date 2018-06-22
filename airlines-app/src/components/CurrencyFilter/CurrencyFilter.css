@@ -1,0 +1,104 @@
+.Filter {
+  height: 370px; 
+  width: 25%;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.FilterContainer {
+  margin: auto;
+  width: 80%;
+}
+
+.Filter p {
+  font-size: 19px;
+  font-weight: 200;
+}
+
+.Table {
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;  
+  color: #3498DB;
+  padding: 0;
+  margin: 0;
+}
+
+.Cell {
+  border-right: 1px solid lightgray;
+  padding: 10px 0 10px 0;
+}
+
+.active {
+  cursor: pointer;
+}
+
+
+.active:hover {
+  background-color:rgb(196, 219, 235);  
+}
+
+/*checboxes*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+

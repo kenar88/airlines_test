@@ -1,0 +1,90 @@
+.Ticket {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.TicketLeft {  
+  width: 30%;
+  border-right: 2px solid gray;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.TicketLeft img {  
+  padding-left: 20px;
+}
+
+.TicketRight {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.Button {
+  background-color: #FF3800;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;  
+  margin: auto; 
+  height: 80px;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: #FD7400;
+}
+
+.FlightInfoDep {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.FlightInfoArrival {
+  padding-left: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.Time {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;  
+}
+
+.Departure {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.Date {
+  color:gray;
+  padding: 0;
+  margin: 0;
+}
+
+.Transfer {
+  position: absolute;
+  left: 54%;
+  top: 15%;
+  width: 25%;
+  height: 40px;
+  border-bottom: 2px solid gray;
+}
+.Transfer p {
+ padding-left: 60px;
+}
